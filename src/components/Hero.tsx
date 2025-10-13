@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBackground from "@/assets/hero-medical-bg.jpg";
+import pegLogo from "@/assets/peg-medical-logo.jpg";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -22,6 +23,15 @@ export const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-6 lg:px-12 py-24">
         <div className="max-w-4xl">
+          {/* Logo */}
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src={pegLogo} 
+              alt="PEG Medical Logo" 
+              className="h-20 md:h-24 w-auto"
+            />
+          </div>
+          
           <h1 className="text-white mb-6 animate-fade-in-up">
             Global Medical Device Business Development & Distribution Partnerships
           </h1>
