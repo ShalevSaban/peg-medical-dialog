@@ -21,14 +21,14 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 mx-auto px-6 lg:px-12 py-24">
+      <div className="container relative z-10 mx-auto px-6 lg:px-12 pt-8 pb-24">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Logo */}
-          <div className="mb-12 animate-fade-in">
-            <img 
-              src={pegLogo} 
-              alt="PEG Medical Logo" 
-              className="h-32 md:h-40 w-auto"
+          <div className="mb-6 animate-fade-in">
+            <img
+              src={pegLogo}
+              alt="PEG Medical Logo"
+              className="h-40 md:h-52 w-auto"
             />
           </div>
           
