@@ -1,4 +1,4 @@
-import pegLogo from "@/assets/peg-medical-logo.jpg";
+import pegLogo from "@/assets/peg-medical-logo.png";
 
 export const Footer = () => {
   return (
