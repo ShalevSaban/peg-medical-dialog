@@ -1,4 +1,4 @@
-import leadershipImage from "@/assets/leadership-profile.jpg";
+import leadershipImage from "@/assets/leadership.jpg";
 
 export const AboutSection = () => {
   return (
@@ -24,9 +24,9 @@ export const AboutSection = () => {
           <div className="md:col-span-2 animate-fade-in-up delay-200">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg transform translate-x-4 translate-y-4" />
-              <img 
-                src={leadershipImage} 
-                alt="Paul Ehud Glaser - Leadership" 
+              <img
+                src={leadershipImage}
+                alt="Paul Ehud Glaser - Leadership"
                 className="relative rounded-lg shadow-2xl w-full aspect-[4/5] object-cover"
               />
             </div>

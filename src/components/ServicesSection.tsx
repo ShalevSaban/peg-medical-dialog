@@ -1,7 +1,8 @@
-import businessDevImage from "@/assets/business-dev.jpg";
+import businessDevImage from "@/assets/business-dev2.jpg";
 import oemImage from "@/assets/oem-manufacturing.jpg";
 import equipmentImage from "@/assets/equipment-lifecycle.jpg";
 import marketEntryImage from "@/assets/market-entry.jpg";
+import marketingSales from "@/assets/marketing-sales.jpg"
 
 interface ServiceProps {
   title: string;
@@ -13,24 +14,26 @@ interface ServiceProps {
 }
 
 const ServiceItem = ({ title, description, image, imageAlt, reverse, index }: ServiceProps) => {
+
+
   return (
     <div className={`grid md:grid-cols-2 gap-8 md:gap-16 items-center ${reverse ? 'md:grid-flow-dense' : ''}`}>
       {/* Image */}
-      <div 
+      <div
         className={`${reverse ? 'md:col-start-2' : ''} animate-fade-in-up`}
         style={{ animationDelay: `${index * 100}ms` }}
       >
         <div className="relative overflow-hidden rounded-lg shadow-2xl aspect-video">
-          <img 
-            src={image} 
-            alt={imageAlt} 
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          <img
+            src={image}
+            alt={imageAlt}
+            className={`w-full h-full  hover:scale-105 transition-transform duration-500`}
           />
         </div>
       </div>
 
       {/* Content */}
-      <div 
+      <div
         className={`${reverse ? 'md:col-start-1 md:row-start-1' : ''} animate-fade-in-up delay-100`}
         style={{ animationDelay: `${index * 100 + 100}ms` }}
       >
@@ -72,6 +75,13 @@ export const ServicesSection = () => {
       image: marketEntryImage,
       imageAlt: "Market Entry",
       reverse: true,
+    },
+    {
+      title: "Marketing and Sales Activities",
+      description: "Education / Training /Creating local and international  Reference center's.",
+      image: marketingSales,
+      imageAlt: "Marketing and sales",
+      reverse: false,
     },
   ];
 

@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
+
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -31,15 +33,35 @@ export const ContactSection = () => {
       return;
     }
 
-    // Simulate form submission (replace with actual email service)
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        'service_a63iof5',
+        'template_49pqhok',
+        {
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        'AlHbYNep6H6Ez8NRA'
+      );
+
       toast({
         title: "Message Sent!",
         description: "Thank you for reaching out. We'll be in touch soon.",
       });
       setFormData({ name: "", company: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or email us directly.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

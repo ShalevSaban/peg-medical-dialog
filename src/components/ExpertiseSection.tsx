@@ -4,6 +4,8 @@ export const ExpertiseSection = () => {
     "Cardiac Surgery",
     "Vascular Devices",
     "Hospital Sales Environments",
+    "Maxillofacial ",
+    "Spinal Surgery"
   ];
 
   return (
