@@ -1,6 +1,6 @@
 export const StatsBar = () => {
   const stats = [
-    { value: "40+", label: "Years Experience" },
+    { value: "42+", label: "Years Experience" },
     { value: "3", label: "Continents" },
     { value: "Leading", label: "Medical Brands" },
     { value: "Global", label: "Network" },
@@ -11,8 +11,8 @@ export const StatsBar = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="text-center animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >

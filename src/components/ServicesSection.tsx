@@ -1,8 +1,8 @@
-import businessDevImage from "@/assets/business-dev2.jpg";
+import businessDevImage from "@/assets/sales and marketing.jpg";
 import oemImage from "@/assets/oem-manufacturing.jpg";
 import equipmentImage from "@/assets/equipment-lifecycle.jpg";
 import marketEntryImage from "@/assets/market-entry.jpg";
-import marketingSales from "@/assets/marketing-sales.jpg"
+import marketingSales from "@/assets/marketing-photos.jpg"
 
 interface ServiceProps {
   title: string;

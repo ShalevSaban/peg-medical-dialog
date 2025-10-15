@@ -3,7 +3,7 @@ export const ExpertiseSection = () => {
     "Neurosurgery",
     "Cardiac Surgery",
     "Vascular Devices",
-    "Hospital Sales Environments",
+    "Hospital Logistics and Leading Hospital Buying Groups",
     "Maxillofacial ",
     "Spinal Surgery"
   ];
@@ -13,7 +13,7 @@ export const ExpertiseSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-white mb-12 animate-fade-in-up">
-            Proven Expertise Across Critical Specialties
+            Proven Expertise In The Following Categories
           </h2>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up delay-100">

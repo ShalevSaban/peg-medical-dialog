@@ -12,10 +12,10 @@ export const AboutSection = () => {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed animate-fade-in-up delay-100">
               <p>
-                Led by <span className="font-semibold text-foreground">Paul Ehud Glaser</span>, PEG Medical brings over 40 years of experience in medical device sales, business development, and surgical technology.
+                Led by <span className="font-semibold text-primary">Paul Ehud Glaser</span>, PEG Medical brings over 42 years of experience in medical device sales, business development, and surgical technology.
               </p>
               <p>
-                With a proven track record representing industry leaders like <span className="font-semibold text-foreground">Medtronic, Johnson & Johnson Medical, and AtriCure</span>, we've built and managed distribution networks across the United States, Canada, and the United Kingdom.
+                With a proven track record representing industry leaders like <span className="font-semibold text-primary ">Medtronic, Johnson & Johnson Medical, AtriCure and many leading companies</span>, we've built and managed distribution networks across the United States, Canada, and the United Kingdom.
               </p>
             </div>
           </div>
