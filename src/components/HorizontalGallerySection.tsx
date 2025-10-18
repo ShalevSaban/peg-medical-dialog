@@ -28,7 +28,7 @@ export const HorizontalGallerySection = () => {
   const galleryCards: GalleryCard[] = [
     {
       id: 1,
-      title: "MTC – Marketing and Sales Activities",
+      title: "Peg Medical – Marketing Strategies",
       description: "Education / Training / Reference center.",
       image: marketingSales,
     },
