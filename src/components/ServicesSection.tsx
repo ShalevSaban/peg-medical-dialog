@@ -1,4 +1,4 @@
-import businessDevImage from "@/assets/sales and marketing.jpg";
+import businessDevImage from "@/assets/business-dev.jpg";
 import oemImage from "@/assets/oem-manufacturing.jpg";
 import equipmentImage from "@/assets/equipment-lifecycle.jpg";
 import marketEntryImage from "@/assets/market-entry.jpg";
@@ -76,13 +76,13 @@ export const ServicesSection = () => {
       imageAlt: "Market Entry",
       reverse: true,
     },
-    {
-      title: "Marketing and Sales Activities",
-      description: "Education / Training /Creating local and international  Reference center's.",
-      image: marketingSales,
-      imageAlt: "Marketing and sales",
-      reverse: false,
-    },
+    // {
+    //   title: "Marketing and Sales Activities",
+    //   description: "Education / Training /Creating local and international  Reference center's.",
+    //   image: marketingSales,
+    //   imageAlt: "Marketing and sales",
+    //   reverse: false,
+    // },
   ];
 
   return (

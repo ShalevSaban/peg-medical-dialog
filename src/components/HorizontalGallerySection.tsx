@@ -1,3 +1,13 @@
+import marketingSales from "@/assets/MTC marketing.jpg"
+import oneOnOne from "@/assets/1 on 1.jpg"
+import doctors from "@/assets/5.jpg"
+import programs from '@/assets/4.jpg'
+import dinner from '@/assets/dinner.jpg'
+import annualMeetings from '@/assets/annual meetings.jpg'
+
+
+
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
   Carousel,
@@ -18,44 +28,44 @@ export const HorizontalGallerySection = () => {
   const galleryCards: GalleryCard[] = [
     {
       id: 1,
-      title: "Card Title 1",
-      description: "Add your description here. This is placeholder text that can be easily edited.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+      title: "MTC – Marketing and Sales Activities",
+      description: "Education / Training / Reference center.",
+      image: marketingSales,
     },
     {
       id: 2,
-      title: "Card Title 2",
-      description: "Add your description here. This is placeholder text that can be easily edited.",
-      image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&h=600&fit=crop",
+      title: "1:1 meetings",
+      description: "",
+      image: oneOnOne,
     },
     {
       id: 3,
-      title: "Card Title 3",
-      description: "Add your description here. This is placeholder text that can be easily edited.",
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      title: "Educational and training program",
+      description: "Focus seminars for doctors and OR staff And Engineering Dept",
+      image: doctors,
     },
     {
       id: 4,
-      title: "Card Title 4",
-      description: "Add your description here. This is placeholder text that can be easily edited.",
-      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=600&fit=crop",
+      title: "Educational and training program",
+      description: "",
+      image: programs,
     },
     {
       id: 5,
-      title: "Card Title 5",
-      description: "Add your description here. This is placeholder text that can be easily edited.",
-      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&h=600&fit=crop",
+      title: "Annual meetings",
+      description: "",
+      image: annualMeetings,
     },
     {
       id: 6,
-      title: "Card Title 6",
-      description: "Add your description here. This is placeholder text that can be easily edited.",
-      image: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=800&h=600&fit=crop",
+      title: "Dinner and Learn Events",
+      description: "",
+      image: dinner,
     },
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-muted/30">
+    <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-muted/30">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-center text-primary mb-16 animate-fade-in-up">
           Our Gallery
@@ -89,7 +99,7 @@ export const HorizontalGallerySection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          
+
           <CarouselPrevious className="left-0 -translate-x-12 bg-primary text-white hover:bg-primary/90 border-none shadow-lg">
             <ChevronLeft className="h-6 w-6" />
           </CarouselPrevious>

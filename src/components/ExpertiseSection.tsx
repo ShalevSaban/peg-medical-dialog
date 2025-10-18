@@ -3,7 +3,8 @@ export const ExpertiseSection = () => {
     "Neurosurgery",
     "Cardiac Surgery",
     "Vascular Devices",
-    "Hospital Logistics and Leading Hospital Buying Groups",
+    "Hospital Logistics",
+    "Leading Hospital Buying Groups",
     "Maxillofacial ",
     "Spinal Surgery"
   ];
