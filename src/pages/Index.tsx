@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { StatsBar } from "@/components/StatsBar";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { HorizontalGallerySection } from "@/components/HorizontalGallerySection";
 import { ExpertiseSection } from "@/components/ExpertiseSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -13,6 +14,7 @@ const Index = () => {
       <StatsBar />
       <AboutSection />
       <ServicesSection />
+      <HorizontalGallerySection />
       <ExpertiseSection />
       <ContactSection />
       <Footer />
