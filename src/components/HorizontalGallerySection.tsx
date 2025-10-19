@@ -4,7 +4,7 @@ import doctors from "@/assets/5.jpg"
 import programs from '@/assets/4.jpg'
 import dinner from '@/assets/dinner.jpg'
 import annualMeetings from '@/assets/annual meetings.jpg'
-
+import workshop from '@/assets/workshop.jpg'
 
 
 
@@ -22,6 +22,7 @@ interface GalleryCard {
   title: string;
   description: string;
   image: string;
+  instagramUrl?: string;
 }
 
 export const HorizontalGallerySection = () => {
@@ -37,6 +38,13 @@ export const HorizontalGallerySection = () => {
       title: "1:1 meetings",
       description: "",
       image: oneOnOne,
+    },
+    {
+      id: 7,
+      title: "Educational and training program",
+      description: "",
+      image: workshop,
+      instagramUrl: "https://www.instagram.com/reel/CtMVikhoW4B/?igsh=bWpzcHd6cWV5NThx"
     },
     {
       id: 3,
@@ -62,15 +70,15 @@ export const HorizontalGallerySection = () => {
       description: "",
       image: dinner,
     },
+
   ];
 
-  return (
+return (
     <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-muted/30">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-center text-primary mb-16 animate-fade-in-up">
           Our Gallery
         </h2>
-
         <Carousel
           opts={{
             align: "start",
@@ -95,11 +103,20 @@ export const HorizontalGallerySection = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     {card.description}
                   </p>
+                  {card.instagramUrl && (
+                    <a
+                      href={card.instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline text-sm mt-3 inline-block font-semibold"
+                    >
+                     Watch on Instagram→
+                    </a>
+                  )}
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-
           <CarouselPrevious className="left-0 -translate-x-12 bg-primary text-white hover:bg-primary/90 border-none shadow-lg">
             <ChevronLeft className="h-6 w-6" />
           </CarouselPrevious>
@@ -109,5 +126,4 @@ export const HorizontalGallerySection = () => {
         </Carousel>
       </div>
     </section>
-  );
-};
+)};
