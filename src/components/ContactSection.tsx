@@ -107,10 +107,10 @@ export const ContactSection = () => {
                   <div>
                     <div className="font-semibold mb-2 text-lg">Email Us</div>
                     <a
-                      href="mailto:pegmedical1@gmail.com"
+                      href="mailto:paul@peg-medical.com"
                       className="text-white/90 hover:text-white transition-colors text-base hover:underline"
                     >
-                      pegmedical1@gmail.com
+                      paul@peg-medical.com
                     </a>
                   </div>
                 </div>
